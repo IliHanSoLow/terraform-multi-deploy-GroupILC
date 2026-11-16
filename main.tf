@@ -11,7 +11,7 @@ resource "google_compute_network" "application" {
 resource "google_compute_instance" "application" {
   count = var.replicas
 
-  name         = "applicationx-${count.index + 1}"
+  name         = "applicationa-${count.index + 1}"
   machine_type = "e2-micro"
   zone         = "${var.location}-b"
 
